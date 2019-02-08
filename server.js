@@ -4,7 +4,7 @@ var logger = require("morgan");
 var cheerio = require("cheerio");
 var axios = require("axios");
 
-var PORT = 3000;
+var PORT = 8000;
 
 var db = require("./models");
 
