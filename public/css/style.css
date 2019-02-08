@@ -1,0 +1,30 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(212,200,190);
+  color: rgb(45,45,43);
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold; 
+  color: rgb(176,176,176);
+  text-align: center;
+
+}
+
+h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  color: rgb(45,45,43);
+  text-align: center;
+}
+
+nav {
+  background-color: rgb(184,146,106);
+  color: rgb(45,45,43);
+}
+.jumbotron {
+  background-image: url("../images.nyt.jpeg");
+}
+
+footer {
+  background-color: rgb(184,146,106);
+}

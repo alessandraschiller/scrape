@@ -1,0 +1,50 @@
+<div class="article-container">
+    	<ul>
+    		{{#each articles }}
+        <div class="card">
+          <div class="card-header">
+            <h3><a id="title-input" href={{link}}>{{link}}</a>{{title}}</h3>
+          </div>
+          <div class="card-body">
+            <button data-id={{_id}} class="btn btn-danger pull-right save-article">Save Article</button>
+          </div>
+        </div>
+
+              <button data-id={{_id}} class="btn btn-primary pull-right saved-buttons"  id="addCheckNote" data-toggle="modal" data-target="#noteModal" data-value="{{this._id}}">View/Add Notes</button>
+    		  </div>
+    		</div>
+    		<br />
+    		<br />
+
+
+      <div class="bootbox modal fade show"  tabindex="-1" role="dialog" aria-labelledby="noteModalLabel" aria-hidden="true" style="display: block;">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <h4 class="modal-title" id=""><b>Notes:</b></h4>
+                        <div>
+                          <ul id="list-group note-container">
+
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="modal-body">
+                      <div class="bootbox-body">
+
+                          <label for="container-fluid text-center">Enter New Note</label>
+                          <textarea class="mod-control" id="notestext" rows="4"></textarea>
+                      </div>
+                      <div></div>
+                  </div>
+                  <div class="modal-body">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button data-id={{_id}}  data-dismiss="modal" id="saveButton" class="btn btn-primary savenote">Save changes</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      {{/each}}
+    </ul>
+
+    </div>
